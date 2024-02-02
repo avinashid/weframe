@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { article } from "./article";
 
 const Article = () => {
   return (
