@@ -1,0 +1,74 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: relative;
+  left: -14px;
+  background: url(/svg/Calender.svg) no-repeat;
+  width: 24px;
+}
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.1);
+  height: 60px;
+  margin: 0px 0px 0px 0px;
+  .nav {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .navLogo {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      width: 100px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      align-items: center;
+      gap: 8px;
+    }
+    .navSection {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      font-size: 1.2rem;
+      color: rgb(101, 90, 90);
+      font-weight: 600;
+      .navText {
+        cursor: pointer;
+        transition: font-size 200ms ease-out;
+      }
+      .navText:hover {
+        color: orange;
+      }
+    }
+    .navButton {
+      align-items: center;
+
+      .navBtn {
+        cursor: pointer;
+        padding: 16px 30px;
+        background-color: orange;
+        color: white;
+        font-weight: 400;
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navWrapper {
+    margin: 0px;
+    width: 100vw;
+    .nav {
+      padding: 0px 20px;
+      .navSection {
+        display: none;
+      }
+    }
+  }
+}

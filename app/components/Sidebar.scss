@@ -1,0 +1,130 @@
+.sideWrapper {
+  z-index: 1;
+  transition: all 300ms ease-out;
+  overflow-y: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  border-right: 1px solid rgba(122, 122, 122, 0.138);
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.1);
+  position: relative;
+  background-color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  width: 65px;
+  height: 100vh;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .sideText {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  .sideToggle {
+    margin-top: 20px;
+  }
+
+  .sideContent {
+    margin: 30px 0px;
+    height: 60vh;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    // box-shadow: 0px 10px 100px rgba(128, 128, 128, 0.1);
+  }
+  .sideSignin {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sideContentView {
+    display: flex;
+    padding: 4px 4px;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+
+.sideBtnColor {
+  color: white;
+  background-color: #7950f2;
+  transition: color, background-color 200ms ease-in-out;
+}
+.sideContentHover:hover {
+  background-color: beige;
+}
+
+.expandedWrapper {
+  overflow: hidden;
+  display: fixed;
+  transition: all 300ms ease-in;
+  width: 200px;
+  .sideContentView {
+    flex-direction: row;
+    width: 150px;
+    padding-left: 5px;
+    justify-content: left;
+    height: 40px;
+  }
+  .sideText {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sideWrapper {
+    border-right: 1px solid rgba(122, 122, 122, 0.138);
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.2);
+    border-radius: 20px;
+    background-color: white;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 90vw;
+    height: 60px;
+    margin: auto;
+    display: row;
+    top: auto;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+
+    .sideContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .sideToggle {
+      display: none;
+    }
+    .sideContentView {
+      overflow: hidden;
+      align-self: center;
+    }
+    .sideSignin {
+      margin-bottom: 0px;
+      margin-left: 20px;
+    }
+    .hide {
+      display: none;
+    }
+  }
+}

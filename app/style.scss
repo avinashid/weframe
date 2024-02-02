@@ -1,0 +1,472 @@
+.bigText {
+  font-size: 1.3rem;
+  color: orange;
+  transition: font-size 200ms ease-in;
+}
+.sideBtnColor {
+  color: white;
+  background-color: orange;
+  transition: color, background-color 200ms ease-in-out;
+}
+.sideContentHover:hover {
+  background-color: beige;
+}
+
+.errorPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.homeOutlet {
+  width: calc(100vw - 85px);
+  background: #e5d6f129;
+  margin-left: 65px;
+  margin-top: 0px;
+  padding: 10px;
+  // animation: ease-in 1s ease-in-out forwards;
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100vw - 60px);
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.1);
+  height: 60px;
+  margin: 0px 0px 0px 60px;
+  .nav {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .navLogo {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      width: 100px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      align-items: center;
+      gap: 8px;
+    }
+    .navSection {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      font-size: 1.2rem;
+      color: rgb(101, 90, 90);
+      font-weight: 600;
+      .navText {
+        cursor: pointer;
+        transition: font-size 200ms ease-out;
+      }
+      .navText:hover {
+        color: orange;
+      }
+    }
+    .navButton {
+      align-items: center;
+
+      .navBtn {
+        cursor: pointer;
+        padding: 16px 30px;
+        background-color: orange;
+        color: white;
+        font-weight: 400;
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+
+
+.formContainer {
+  border-radius: 30px;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 500px;
+  width: 70vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  .formLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 10px;
+    font-family: sans-serif;
+  }
+  .formHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+    color: grey;
+    font-weight: 900;
+    .formLegend {
+      color: rgb(43, 42, 42);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+  .mainForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      height: 40px;
+      border: none;
+      background-color: #e2e2e265;
+      border-radius: 12px;
+
+      text-indent: 20px;
+    }
+    button {
+      height: 40px;
+      border-radius: 12px;
+      background-color: orange;
+      border: none;
+      color: white;
+    }
+  }
+  .formBottom {
+    font-size: smaller;
+    font-weight: 600;
+  }
+  .formClose {
+    color: black;
+    position: fixed;
+    right: 0;
+    padding: 5px 20px;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+}
+
+.dashNav {
+  transition: all 200ms ease-in;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  margin-left: 60px;
+  width: calc(100vw - 60px);
+  border-bottom: 1px solid rgb(230, 230, 230);
+  box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.2);
+  .dashNavWrapper {
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .navLogo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .dashNavWrapperRight {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      .searchWrap {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2px 15px;
+        border-radius: 20px;
+        width: 300px;
+        height: 35px;
+        background-color: #edecec;
+        .searchLeft {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          input {
+            // width:80px;
+
+            border: none;
+            background-color: transparent;
+            outline: none;
+          }
+        }
+      }
+      .icon {
+        cursor: pointer;
+      }
+      .icon:hover {
+        color: orange;
+      }
+    }
+  }
+}
+
+.profile {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background-color: mintcream;
+  .profileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // margin: 0px 40px;
+    .profileLeft {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      .profileImage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imageContainer {
+          background-color: skyblue;
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+        }
+        .edit {
+          position: absolute;
+          font-size: 20px;
+          width: 25px;
+          height: 25px;
+          background-color: mintcream;
+          padding: 2px;
+          border-radius: 50%;
+          bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .profileInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .hello {
+          font-size: 20px;
+          font-weight: 200;
+        }
+        .profileName {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        .email {
+          font-size: 16px;
+          font-weight: 100;
+        }
+      }
+    }
+    .followers {
+      display: flex;
+      align-items: center;
+      font-weight: 200;
+      font-size: 20px;
+    }
+  }
+}
+
+.aboutMe {
+  // padding: 30px;
+  border-bottom: 1px solid rgba(176, 173, 173, 0.289);
+  background-color: #e5d6f129;
+  // padding: 30px;
+  .aboutWrapper {
+    .aboutHead {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .about {
+        font-size: 16px;
+        color: rgb(63, 63, 63);
+        font-weight: 600;
+      }
+      .editBtn {
+        button {
+          padding: 5px 30px;
+          border-radius: 8px;
+          border: none;
+          background-color: orange;
+          color: rgb(240, 240, 240);
+          font-size: 16px;
+        }
+      }
+    }
+    .inputWrapper {
+      padding: 20px 15px;
+      background-color: white;
+      border-radius: 12px;
+      margin: 20px;
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        text-indent: 20px;
+        outline: none;
+        resize: none;
+        border: none;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.onWeb {
+  border-bottom: 1px solid rgba(176, 173, 173, 0.289);
+  background-color: #e5d6f129;
+  width: 100%;
+  // padding: 30px;
+  .onWebWrap {
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .title {
+        font-size: 16px;
+        color: rgb(63, 63, 63);
+        font-weight: 600;
+      }
+      .editBtn {
+        button {
+          padding: 5px 30px;
+          border-radius: 8px;
+          border: none;
+          background-color: orange;
+          color: rgb(240, 240, 240);
+          font-size: 16px;
+        }
+      }
+    }
+    .inputWrapper {
+      width: 100%;
+      gap: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .inputContain {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .inputElem {
+          color: grey;
+          font-size: 20px;
+          padding: 0px 20px;
+          justify-content: start;
+          align-items: center;
+          background-color: white;
+          border-radius: 8px;
+          height: 40px;
+          display: flex;
+          flex-direction: row;
+          input[type="text"] {
+            width: 100%;
+            outline: none;
+            text-indent: 10px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .dashboard {
+  }
+  .sideWrapper {
+    border-right: 1px solid rgba(122, 122, 122, 0.138);
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.2);
+    position: absolute;
+    border-radius: 20px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: calc(100vh - 80px);
+    overflow: hidden;
+    width: 90vw;
+    height: 50px;
+    margin: auto;
+    display: row;
+    flex-direction: row;
+    justify-content: center;
+    .sideContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .sideToggle {
+      display: none;
+    }
+    .sideContentView {
+      overflow: hidden;
+      align-self: center;
+    }
+    .sideSignin {
+      margin-bottom: 0px;
+      margin-left: 20px;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .homeOutlet {
+    width: calc(100vw - 40px);
+    margin-left: 0;
+    padding: 20px 20px;
+    background-color: #e5d6f129;
+  }
+  .navWrapper {
+    margin: 0px;
+    width: 100vw;
+    .nav {
+      padding: 0px 20px;
+      .navSection {
+        display: none;
+      }
+    }
+  }
+  .dashNav {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    .dashNavWrapper {
+      .dashNavWrapperRight {
+        .searchWrap {
+          display: none;
+        }
+      }
+    }
+  }
+}
